@@ -49,5 +49,4 @@ public class IsoscelesTrapezoid extends FigureParent {
     public double findArea() {
         return roundTo(((base1 + base2) / 2) * height);
     }
-
 }

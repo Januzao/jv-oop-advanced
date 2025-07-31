@@ -35,5 +35,4 @@ public class Rectangle extends FigureParent {
     public double findArea() {
         return roundTo(width * height);
     }
-
 }

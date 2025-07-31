@@ -21,7 +21,6 @@ public class FigureParent implements Figure, GetArea {
         return 0;
     }
 
-    @Override
     public double roundTo(double value) {
         return Math.round(value * 100.0) / 100.0;
     }
