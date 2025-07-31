@@ -6,7 +6,7 @@ public class Rectangle extends FigureParent {
 
     public Rectangle(double width, double height, String color) {
         super(color);
-        if (width < 0 || height < 0) {
+        if (width <= 0 || height <= 0) {
             throw new IllegalArgumentException("All dimensions must be positive.");
         }
 

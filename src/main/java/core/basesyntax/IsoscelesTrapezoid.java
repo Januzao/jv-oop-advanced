@@ -8,7 +8,7 @@ public class IsoscelesTrapezoid extends FigureParent {
 
     public IsoscelesTrapezoid(double base1, double base2, double leg, double height, String color) {
         super(color);
-        if (base1 < 0 || base2 < 0 || leg < 0 || height < 0) {
+        if (base1 <= 0 || base2 <= 0 || leg <= 0 || height <= 0) {
             throw new IllegalArgumentException("All dimensions must be positive.");
         }
 

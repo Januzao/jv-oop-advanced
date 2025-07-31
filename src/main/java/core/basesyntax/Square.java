@@ -5,7 +5,7 @@ public class Square extends FigureParent {
 
     public Square(double side, String color) {
         super(color);
-        if (side < 0) {
+        if (side <= 0) {
             throw new IllegalArgumentException("Side must be positive.");
         }
 

@@ -6,7 +6,7 @@ public class RightTriangle extends FigureParent {
 
     public RightTriangle(double firstLeg, double secondLeg, String color) {
         super(color);
-        if (firstLeg < 0 || secondLeg < 0) {
+        if (firstLeg <= 0 || secondLeg <= 0) {
             throw new IllegalArgumentException("legs must be positive.");
         }
 

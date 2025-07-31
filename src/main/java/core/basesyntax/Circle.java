@@ -5,7 +5,7 @@ public class Circle extends FigureParent {
 
     public Circle(double radius, String color) {
         super(color);
-        if (radius < 0) {
+        if (radius <= 0) {
             throw new IllegalArgumentException("radius must be positive.");
         }
         this.radius = radius;
