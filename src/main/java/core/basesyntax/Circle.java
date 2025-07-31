@@ -1,6 +1,6 @@
 package core.basesyntax;
 
-public class Circle extends AbstractFigure {
+public class Circle extends FigureParent {
     private final double radius;
 
     public Circle(double radius, String color) {
@@ -28,8 +28,4 @@ public class Circle extends AbstractFigure {
         return roundTo(Math.PI * Math.pow(radius, 2));
     }
 
-    @Override
-    public double roundTo(double value) {
-        return Math.round(value * 100.0) / 100.0;
-    }
 }

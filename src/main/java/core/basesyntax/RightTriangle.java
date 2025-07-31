@@ -1,6 +1,6 @@
 package core.basesyntax;
 
-public class RightTriangle extends AbstractFigure {
+public class RightTriangle extends FigureParent {
     private final double firstLeg;
     private final double secondLeg;
 
@@ -34,10 +34,5 @@ public class RightTriangle extends AbstractFigure {
     @Override
     public double findArea() {
         return roundTo(firstLeg * secondLeg * 0.5);
-    }
-
-    @Override
-    public double roundTo(double value) {
-        return Math.round(value * 100.0) / 100.0;
     }
 }

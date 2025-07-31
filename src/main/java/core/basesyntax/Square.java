@@ -1,6 +1,6 @@
 package core.basesyntax;
 
-public class Square extends AbstractFigure {
+public class Square extends FigureParent {
     private final double side;
 
     public Square(double side, String color) {
@@ -26,11 +26,6 @@ public class Square extends AbstractFigure {
 
     @Override
     public double findArea() {
-        return roundTo(side * side);
-    }
-
-    @Override
-    public double roundTo(double value) {
-        return Math.round(value * 100.0) / 100.0;
+        return side * side;
     }
 }

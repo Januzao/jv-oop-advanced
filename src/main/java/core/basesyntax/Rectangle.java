@@ -1,6 +1,6 @@
 package core.basesyntax;
 
-public class Rectangle extends AbstractFigure {
+public class Rectangle extends FigureParent {
     private final double width;
     private final double height;
 
@@ -36,8 +36,4 @@ public class Rectangle extends AbstractFigure {
         return roundTo(width * height);
     }
 
-    @Override
-    public double roundTo(double value) {
-        return Math.round(value * 100.0) / 100.0;
-    }
 }

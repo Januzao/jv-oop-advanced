@@ -1,6 +1,6 @@
 package core.basesyntax;
 
-public class IsoscelesTrapezoid extends AbstractFigure {
+public class IsoscelesTrapezoid extends FigureParent {
     private final double base1; // length of the bottom base
     private final double base2; // length of the top base
     private final double leg; // length of the equal non-parallel sides
@@ -11,6 +11,7 @@ public class IsoscelesTrapezoid extends AbstractFigure {
         if (base1 < 0 || base2 < 0 || leg < 0 || height < 0) {
             throw new IllegalArgumentException("All dimensions must be positive.");
         }
+
         this.base1 = base1;
         this.base2 = base2;
         this.leg = leg;
@@ -49,8 +50,4 @@ public class IsoscelesTrapezoid extends AbstractFigure {
         return roundTo(((base1 + base2) / 2) * height);
     }
 
-    @Override
-    public double roundTo(double value) {
-        return Math.round(value * 100.0) / 100.0;
-    }
 }
